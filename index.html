@@ -1,23 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Maze Quest</title>
-    </head>
-    <body>
-        <header>
-            <nav class="top-nav">
-                <a class="logo" href="index.html">
-                    <img src="img/logo.svg" alt="logo">
-                </a>
-                <div class="menu">
-                    <a href="#our-rooms">Our Rooms</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contacts">Contacts</a>  
-                    <a href="#book" class="button">Book a Quest</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Maze Quest</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-head">
+            <a href="tel:+12345678900">+ 1-234-567-8900</a>
+            <ul>
+                <li style="display: inline;">
+                    <a href="https://twitter.com/">
+                        <img src="img/twitter-logo.svg" alt="twitter-logo">
+                    </a>
+                </li>
+                <li style="display: inline;">
+                    <a href="https://www.facebook.com/">
+                        <img src="img/facebook-logo.svg" alt="facebook-logo">
+                    </a>
+                </li>
+                <li style="display: inline;">
+                    <a href="https://www.instagram.com/">
+                        <img src="img/instagram-logo.svg" alt="instagram-logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+            <div class="menu">
+                <a href="our-rooms.html" class="link-button">Our Rooms</a>
+                <a href="gallery.html" class="link-button">Gallery</a>
+                <a href="contacts.html" class="link-button">Contacts</a>
+                <a href="#book" class="button">Book a Quest</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id='hero-wrap' class="hero-wrap">
+            <div class="hero-item" style="background-image: url('img/sherlock.png');">
+                <img src="img/hero.png" alt=""><br>
+                <a href="#book" class="button">Book a Quest</a>
+                <a href="#about" class="button">Learn More</a>
+            </div>
+        </section>
+        <section id='how-to-play' class="how-to-play">
+            <h2>How to Play</h2>
+            <div class="card-box">
+                <div class="card">
+                    <div class="card-icon-wrap">
+                        <span>
+                            <img src="img/door.svg" alt="">
+                        </span>
+                    </div>
+                    <p>Book a room and come
+                        at the appointed date and time
+                    </p>
                 </div>
-            </nav>
-        </header>
-    </body>
+                <div class="card">
+                    <div class="card-icon-wrap">
+                        <span>
+                            <img src="img/sandtimer.svg" alt="">
+                        </span>
+                        <p>You have 60 minutes
+                            to escape. The clock is set
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon-wrap">
+                        <span>
+                            <img src="img/lock.svg" alt="">
+                        </span>
+                    </div>
+                    <p>Time to solve the maze -
+                        find clues and the way out
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quests" class="quests">
+            <h2>Quests</h2>
+            <div class="carousel-wrap">
+                <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel-item1.png" class="d-block w-100" alt="...">
+                            <h3>
+                                <span>Name:</span>
+                                <span>Jumanji</span>
+                            </h3>
+                            <h3>
+                                <span>Players:</span>
+                                <span>4-5</span>
+                            </h3>
+                            <p>It all started as in the same-name movie: you started a game that brought you to real jungles! Everything is strange, poisoned and willing to kill you here. Now you are in a hunter's house but it's not safe here. Can you
+                                find your way out from the killing
+                                jungles? You better hurry - it's a life-or-death matter.</p>
+                            <a href="jumanji-quest.html">Learn More</a>
+                            <a href="our-rooms.html">See More Quests</a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-item2.png" class="d-block w-100" alt="...">
+                            <h3>
+                                <span>Name:</span>
+                                <span>Sherlock Holmes</span>
+                            </h3>
+                            <h3>
+                                <span>Players:</span>
+                                <span>2-6</span>
+                            </h3>
+                            <p>Sherlock Holmes gives you the first clue to the unsolved Egyptian mystery. Somewhere in the room you will find the key to the ancient myth. It will also be your clue to finding a way out. You are Sherlock Holmes' only hope
+                                to solving the mystery, so
+                                better get going — it's about to get real.</p>
+                            <a href="jumanji-quest.html">Learn More</a>
+                            <a href="our-rooms.html">See More Quests</a>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel-item3.png" class="d-block w-100" alt="...">
+                            <h3>
+                                <span>Name:</span>
+                                <span>Crazy Scientist</span>
+                            </h3>
+                            <h3>
+                                <span>Players:</span>
+                                <span>2-7</span>
+                            </h3>
+                            <p>It was an ordinary day. You and your friends received an invitation to the party in an unfamiliar neighborhood. Everything was awesome until you were trapped in a strange room with flasks and suspicious devices. You
+                                understood that the host is a scientist
+                                and he didn't like that you nosed into his business. You felt it could be dangerous. How to save your life from a crazy scientist?</p>
+                            <a href="jumanji-quest.html">Learn More</a>
+                            <a href="our-rooms.html">See More Quests</a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id='about' class="about">
+            <img src="img/about.png" alt="">
+            <h2>About QuestMaze</h2>
+            <p>It all started as a hobby for two friends who simply wanted to offer New Yorkers some kind of new entertainment option. We started with one small quest room in Brooklyn and it was a real success, so we began to expand.
+
+                Now we offer a huge variety of quests, some of them occupy entire floors and promise a complete immersion in the plot. We constantly update our quests and offer new stories, so even if you have already come to us many times, we will still
+                have something
+                to surprise you. Come and see!</p>
+            <div class="statistic-box">
+                <div class="statistic-item">
+                    <span>3</span>
+                    <label>different locations in NY</label>
+                </div>
+                <div class="statistic-item">
+                    <span>5</span>
+                    <label>thrilling quest rooms</label>
+                </div>
+                <div class="statistic-item">
+                    <span>500</span>
+                    <label>square meters of mysteries</label>
+                </div>
+                <div class="statistic-item">
+                    <span>30 000</span>
+                    <label>people already escaped</label>
+                </div>
+            </div>
+        </section>
+        <section class="gift-form">
+            <h2>Escape as a Gift</h2>
+            <p>QuestMaze Certificate is a gift card with a value that you choose yourself. The recipient of the certificate will be able to choose any quest in any of our locations at a suitable time.</p>
+            <form action="" method="post">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone number">
+                <button class="submit">Start a Quest!</button>
+            </form>
+        </section>
+        <section class='coming-soon'>
+            <h2>Coming Soon Rooms</h2>
+            <div class="soon-box">
+                <div class="soon-item">
+                    <img src="img/murder-quest.png" alt="">
+                    <div class="caption-wrap">
+                        <span>|</span>
+                        <span>Murder in Cyberpunk World</span>
+                    </div>
+                </div>
+                <div class="soon-item">
+                    <img src="img/treasure-quest.png" alt="">
+                    <div class="caption-wrap">
+                        <span>|</span>
+                        <span>Treasure Island</span>
+                    </div>
+                </div>
+                <div class="soon-item">
+                    <img src="img/dead-or-alive-quest.png" alt="">
+                    <div class="caption-wrap">
+                        <span>|</span>
+                        <span>Dead or Alive</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='gallery'>
+            <h2>Gallery</h2>
+            <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/gallery1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id='book' class="main-form-wrap">
+            <div class="map">
+                <img src="img/map.jpg" alt="">
+            </div>
+            <div class="main-form">
+                <h2>Ready to Escape?</h2>
+                <p>Complete the form below, specify the room, the date and the quantity of players, and we will contact you to confirm your booking.</p>
+                <form action="" method="post">
+                    <form action="" method="post">
+                        <input type="text" placeholder="Enter your full name*">
+                        <input type="text" placeholder="Enter your phone number*">
+                        <input type="text" placeholder="Enter your phone e-mail*">
+                        <textarea name="details" id="details" placeholder="Specify the details" cols="30" rows="10"></textarea>
+                        <button class="submit">Start a Quest!</button>
+                    </form>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="img/logo.svg" alt="">
+        <p>We offer a huge variety of thrilling quests, some of them occupy entire floors and promise a complete immersion in the plot.</p>
+        <a href="#our-rooms" class="link-button">Our Rooms</a>
+        <a href="#gallery" class="link-button">Gallery</a>
+        <a href="#contacts" class="link-button">Contacts</a>
+        <ul>
+            <li style="display: inline;">
+                <a href="https://twitter.com/">
+                    <img src="img/twitter-logo.svg" alt="twitter-logo">
+                </a>
+            </li>
+            <li style="display: inline;">
+                <a href="https://www.facebook.com/">
+                    <img src="img/facebook-logo.svg" alt="facebook-logo">
+                </a>
+            </li>
+            <li style="display: inline;">
+                <a href="https://www.instagram.com/">
+                    <img src="img/instagram-logo.svg" alt="instagram-logo">
+                </a>
+            </li>
+        </ul>
+        <p>©Created by Oleksii Zabiiaka All rights Reserved</p>
+    </footer>
+</body>
+
 </html>
