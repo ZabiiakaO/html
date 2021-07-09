@@ -1,0 +1,82 @@
+:root { 
+    --background-black: black;
+    --dark-gray: rgba(20,22,22,255);
+    --font-color: white;
+    --font-hover-color: rgb(255, 197, 53);
+    --yellow-button-color: #ffc535;
+    --yellow-button-hover-color: #ffa700;
+    --purple-button-color: #806eff;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+body {
+    background-color: var(--background-black);
+}
+
+.top-head {
+    align-items: center;
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+.social-item {
+    width: 32px;
+    height: 32px;
+}
+
+.social-item::marker {
+    display: none;
+    color: transparent;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--font-hover-color);
+}
+
+nav {
+    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.card {
+    background-color: var(--background-black);
+}
+
+.button { 
+    border: 1px solid;
+    border-radius: 27px;
+    padding: 8px 16px;
+}
+
+.button-yellow {  
+    border-color: var(--yellow-button-color);
+    background-color: var(--yellow-button-color);
+}
+.button-yellow:hover {  
+    color: white;
+    background-color: var(--yellow-button-hover-color);
+}
+
+.button-purple {
+    border-color: var(--purple-button-color);
+    background-color: var(--background-black);
+}
+
+.button-purple:hover {
+    background-color: var(--purple-button-color);
+}

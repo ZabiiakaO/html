@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Maze Quest</title>
 </head>
@@ -13,18 +15,18 @@
     <header>
         <div class="top-head">
             <a href="tel:+12345678900">+ 1-234-567-8900</a>
-            <ul>
-                <li style="display: inline;">
+            <ul class="social-icons">
+                <li class="social-item">
                     <a href="https://twitter.com/">
                         <img src="img/twitter-logo.svg" alt="twitter-logo">
                     </a>
                 </li>
-                <li style="display: inline;">
+                <li class="social-item">
                     <a href="https://www.facebook.com/">
                         <img src="img/facebook-logo.svg" alt="facebook-logo">
                     </a>
                 </li>
-                <li style="display: inline;">
+                <li class="social-item">
                     <a href="https://www.instagram.com/">
                         <img src="img/instagram-logo.svg" alt="instagram-logo">
                     </a>
@@ -44,13 +46,14 @@
         </nav>
     </header>
     <main>
-        <section id='hero-wrap' class="hero-wrap">
+        <div id='hero-wrap' class="hero-wrap">
             <div class="hero-item" style="background-image: url('img/sherlock.png');">
                 <img src="img/hero.png" alt=""><br>
-                <a href="#book" class="button">Book a Quest</a>
-                <a href="#about" class="button">Learn More</a>
+                <p>Grab your friends or family & get ready for thrilling adventures!</p>
+                <a href="#book" class="button button-yellow">Book a Quest</a>
+                <a href="#about" class="button button-purple">Learn More</a>
             </div>
-        </section>
+        </div>
         <section id='how-to-play' class="how-to-play">
             <h2>How to Play</h2>
             <div class="card-box">
@@ -183,9 +186,9 @@
         <section class="gift-form">
             <h2>Escape as a Gift</h2>
             <p>QuestMaze Certificate is a gift card with a value that you choose yourself. The recipient of the certificate will be able to choose any quest in any of our locations at a suitable time.</p>
-            <form action="" method="post">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Phone number">
+            <form action="/" method="post">
+                <input type="name" placeholder="Name">
+                <input type="phone" placeholder="Phone number">
                 <button class="submit">Start a Quest!</button>
             </form>
         </section>
@@ -256,9 +259,9 @@
                 <h2>Ready to Escape?</h2>
                 <p>Complete the form below, specify the room, the date and the quantity of players, and we will contact you to confirm your booking.</p>
                 <form action="https://formspree.io/f/mlealyno" method="post">
-                    <input type="text" placeholder="Enter your full name*">
-                    <input type="text" placeholder="Enter your phone number*">
-                    <input type="text" placeholder="Enter your phone e-mail*">
+                    <input type="name" placeholder="Enter your full name*">
+                    <input type="phone" placeholder="Enter your phone number*">
+                    <input type="email" placeholder="Enter your phone e-mail*">
                     <textarea name="details" id="details" placeholder="Specify the details" cols="30" rows="10"></textarea>
                     <button class="submit">Start a Quest!</button>
                 </form>
@@ -272,17 +275,17 @@
         <a href="#gallery" class="link-button">Gallery</a>
         <a href="#contacts" class="link-button">Contacts</a>
         <ul>
-            <li style="display: inline;">
+            <li>
                 <a href="https://twitter.com/">
                     <img src="img/twitter-logo.svg" alt="twitter-logo">
                 </a>
             </li>
-            <li style="display: inline;">
+            <li>
                 <a href="https://www.facebook.com/">
                     <img src="img/facebook-logo.svg" alt="facebook-logo">
                 </a>
             </li>
-            <li style="display: inline;">
+            <li>
                 <a href="https://www.instagram.com/">
                     <img src="img/instagram-logo.svg" alt="instagram-logo">
                 </a>
