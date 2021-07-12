@@ -1,3 +1,21 @@
 p {
     color: white;
 }
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem;
+}
+.hero-content img {
+    max-width: 80%;
+}
+
+.hero-content p {
+    text-align: center;
+}
+
+.hero-item {
+    background: url('../img/sherlock.png') 65.31% 44.06% / cover no-repeat, rgb(2, 2, 2);;
+}

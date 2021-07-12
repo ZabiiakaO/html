@@ -6,11 +6,14 @@
     --yellow-button-color: #ffc535;
     --yellow-button-hover-color: #ffa700;
     --purple-button-color: #806eff;
+    --purple-button-dark-color: #551a8b;
     font-family: 'Times New Roman', Times, serif; 
 }
 
 body {
     background-color: var(--background-black);
+    max-width: 1920px;
+    margin: auto;
 }
 
 .top-head {
@@ -40,6 +43,7 @@ body {
 a {
     color: var(--font-color);
     text-decoration: none;
+    transition: color .2s ease-out;
 }
 
 a:hover {
@@ -66,6 +70,7 @@ nav {
 .button-yellow {  
     border-color: var(--yellow-button-color);
     background-color: var(--yellow-button-color);
+    transition: color .2s ease-out;
 }
 .button-yellow:hover {  
     color: white;
@@ -75,8 +80,58 @@ nav {
 .button-purple {
     border-color: var(--purple-button-color);
     background-color: var(--background-black);
+    transition: color .2s ease-out;
 }
 
 .button-purple:hover {
-    background-color: var(--purple-button-color);
+    background-color: var(--purple-button-color); 
+}
+
+.social-logo {
+    fill: var(--purple-button-color);
+    transition: color .2s ease-out;
+    width: 32px;
+    height: 32px;
+
+}
+.social-logo:hover {
+    fill: var(--purple-button-dark-color);
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.nav { 
+    padding: 0 20%;
+}
+
+.menu {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    min-width: 25rem;
+    align-items: baseline;
+}
+
+.hero-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-button a {
+    margin: 0 2rem;
+}
+
+@media (max-width: 1155px) {
+    .menu {
+    flex-direction: column;
+    padding: 1rem 0;
+}
+    .menu div {
+    padding: 1rem;
+}
 }
