@@ -30,6 +30,7 @@ p {
 .card {
     background-color: var(--article-background);
     text-align: center;
+    padding: 1rem;
 }
 
 .card-box {
