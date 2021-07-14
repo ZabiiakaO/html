@@ -1,5 +1,10 @@
+@import url(common.css);
+h2 {
+    color: var(--font-color);
+}
+
 p {
-    color: white;
+    color: var(--font-color);
 }
 
 .hero-content {
@@ -8,6 +13,7 @@ p {
     align-items: center;
     padding: 8rem;
 }
+
 .hero-content img {
     max-width: 80%;
 }
@@ -17,5 +23,109 @@ p {
 }
 
 .hero-item {
-    background: url('../img/sherlock.png') 65.31% 44.06% / cover no-repeat, rgb(2, 2, 2);;
+    background: url('../img/sherlock.png') 65.31% 44.06% / cover no-repeat, rgb(2, 2, 2);
+    ;
+}
+
+.card {
+    background-color: var(--article-background);
+    text-align: center;
+}
+
+.card-box {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+h3 {
+    text-align: left;
+    color: var(--font-color)
+}
+
+.card-icon-wrap div {
+    width: 5rem;
+    color: var(--yellow-button-color);
+    margin: auto;
+}
+
+.carousel-inner {
+    padding: 2rem 1rem;
+}
+
+.carousel-content {
+    margin: 2rem 0;
+}
+
+.carousel-content img {
+    height: 65vh;
+}
+
+.carousel-content p {
+    min-height: 7rem
+}
+
+.title-card {
+    color: var(--yellow-button-color);
+}
+
+.statistic-box {
+    flex-direction: column;
+}
+
+.statistic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gift-form {
+    background-color: var(--yellow-button-color);
+    padding: 8rem 1rem;
+}
+
+#gift-form p, h2 {
+    color: black;
+}
+
+.statistic-item span {
+    color: var(--purple-button-color);
+    font-size: 3rem;
+}
+
+.statistic-item label {
+    color: var(--font-color);
+}
+
+@media (min-width: 700px) {}
+
+@media (max-width: 700px) {
+    .card-box {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 630px) {
+    .carousel-content img {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero-button {
+        flex-direction: column;
+    }
+    .hero-button a {
+        margin: 1rem 2rem;
+    }
+    .hero-content img {
+        max-width: 200%;
+    }
+    .carousel-content img {
+        height: 40vh;
+    }
 }

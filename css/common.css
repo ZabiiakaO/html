@@ -1,19 +1,37 @@
-:root { 
+:root {
     --background-black: black;
-    --dark-gray: rgba(20,22,22,255);
+    --dark-gray: rgba(20, 22, 22, 255);
     --font-color: white;
     --font-hover-color: rgb(255, 197, 53);
     --yellow-button-color: #ffc535;
     --yellow-button-hover-color: #ffa700;
     --purple-button-color: #806eff;
     --purple-button-dark-color: #551a8b;
-    font-family: 'Times New Roman', Times, serif; 
+    --article-background: rgb(18, 19, 19);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
 }
 
 body {
     background-color: var(--background-black);
     max-width: 1920px;
     margin: auto;
+}
+
+section {
+    margin: 3rem 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 .top-head {
@@ -51,7 +69,7 @@ a:hover {
 }
 
 nav {
-    align-items: center; 
+    align-items: center;
     display: flex;
     justify-content: space-between;
     padding: 0 20%;
@@ -61,18 +79,21 @@ nav {
     background-color: var(--background-black);
 }
 
-.button { 
+.button {
     border: 1px solid;
     border-radius: 27px;
     padding: 8px 16px;
+    min-width: 10rem;
+    text-align: center;
 }
 
-.button-yellow {  
+.button-yellow {
     border-color: var(--yellow-button-color);
     background-color: var(--yellow-button-color);
     transition: color .2s ease-out;
 }
-.button-yellow:hover {  
+
+.button-yellow:hover {
     color: white;
     background-color: var(--yellow-button-hover-color);
 }
@@ -84,7 +105,7 @@ nav {
 }
 
 .button-purple:hover {
-    background-color: var(--purple-button-color); 
+    background-color: var(--purple-button-color);
 }
 
 .social-logo {
@@ -92,8 +113,8 @@ nav {
     transition: color .2s ease-out;
     width: 32px;
     height: 32px;
-
 }
+
 .social-logo:hover {
     fill: var(--purple-button-dark-color);
 }
@@ -103,7 +124,7 @@ nav {
     margin: auto;
 }
 
-.nav { 
+.nav {
     padding: 0 20%;
 }
 
@@ -126,12 +147,22 @@ nav {
     margin: 0 2rem;
 }
 
-@media (max-width: 1155px) {
-    .menu {
-    flex-direction: column;
+.navbar-collapse {
+    flex-grow: unset;
+}
+
+.nav-item {
     padding: 1rem 0;
 }
-    .menu div {
-    padding: 1rem;
-}
+
+@media (max-width: 550px) {
+    nav {
+        padding: 0;
+    }
+    .top-head {
+        display: none;
+    }
+    .menu {
+        align-items: center;
+    }
 }
