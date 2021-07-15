@@ -9,25 +9,25 @@
     --purple-button-dark-color: #551a8b;
     --article-background: rgb(18, 19, 19);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
 }
 
 body {
     background-color: var(--background-black);
     max-width: 1920px;
+    min-width: 320px;
     margin: auto;
 }
 
-section {
-    margin: 3rem 1rem;
+.hero-wrap, section {
+    padding-bottom: 6.875rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.375rem;
 }
 
 h1, h2 {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 h1, h2, h3 {
@@ -37,9 +37,17 @@ h1, h2, h3 {
 .top-head {
     align-items: center;
     background-color: var(--dark-gray);
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 0 20%;
+    transition: all 1s ease-out;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .social-icons {
@@ -68,29 +76,21 @@ a:hover {
     color: var(--font-hover-color);
 }
 
-nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20%;
-}
-
-.card {
-    background-color: var(--background-black);
-}
-
 .button {
     border: 1px solid;
     border-radius: 27px;
-    padding: 8px 16px;
+    padding: 0.625rem 1rem;
     min-width: 10rem;
     text-align: center;
+    height: 3rem;
+    min-width: 13rem;
 }
 
 .button-yellow {
     border-color: var(--yellow-button-color);
     background-color: var(--yellow-button-color);
     transition: color .2s ease-out;
+    box-shadow: 0 10px 23.8px 1.2px rgb(255 197 53 / 30%);
 }
 
 .button-yellow:hover {
@@ -125,26 +125,23 @@ nav {
 }
 
 .nav {
-    padding: 0 20%;
+    padding: 0;
 }
 
 .menu {
     font-weight: 500;
     display: flex;
     justify-content: space-between;
-    min-width: 25rem;
-    align-items: baseline;
-}
-
-.hero-button {
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.hero-button a {
-    margin: 0 2rem;
+ol, ul {
+    padding-left: 0rem;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+    color: transparent;
 }
 
 .navbar-collapse {
@@ -155,14 +152,18 @@ nav {
     padding: 1rem 0;
 }
 
-@media (max-width: 550px) {
-    nav {
-        padding: 0;
-    }
-    .top-head {
+@media (min-width: 992px) {
+    .mobile-item {
         display: none;
     }
+    .top-head {
+        display: flex;
+        transition: all 1s ease-out;
+    }
+    nav {
+        padding: 0 20%;
+    }
     .menu {
-        align-items: center;
+        min-width: 24rem;
     }
 }
