@@ -39,7 +39,7 @@ p {
 }
 
 .hero-item {
-    background: url(../img/sherlock.png) 100%;
+    background: repeat-x url(../img/sherlock.png) 100%;
 }
 
 .card {
@@ -238,6 +238,37 @@ section h2 {
     padding-top: 24px;
 }
 
+.book-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.map img {
+    width: 100%;
+}
+
+.main-form {
+    background-color: var(--yellow-button-color);
+    padding: 1rem 1rem;
+}
+
+.main-form h2, .main-form p {
+    color: black;
+}
+
+.main-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form form * {
+    margin: .5rem 0;
+}
+
+.book-flex div {
+    margin: 1rem 0;
+}
+
 @media (min-width: 500px) {
     .statistic-box {
         grid-template-columns: 1fr 1fr;
@@ -307,6 +338,20 @@ section h2 {
     .small-soon {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: unset;
+    }
+    .book-flex {
+        flex-direction: row;
+    }
+    .main-form {
+        width: 50%;
+        text-align: center;
+        padding: 3rem;
+    }
+    .map {
+        width: 50%;
+    }
+    .book-flex div {
+        margin: 1rem 1rem;
     }
 }
 

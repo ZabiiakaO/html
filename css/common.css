@@ -13,9 +13,14 @@
 
 body {
     background-color: var(--background-black);
-    max-width: 1920px;
-    min-width: 320px;
+    /* max-width: 1600px;
+    min-width: 320px; */
     margin: auto;
+}
+
+.container {
+    max-width: 1600px;
+    min-width: 320px;
 }
 
 .hero-wrap, section {
@@ -98,6 +103,10 @@ a:hover {
     background-color: var(--yellow-button-hover-color);
 }
 
+.button-yellow:active {
+    background-image: linear-gradient( 90deg, #ffc535, #141616);
+}
+
 .button-purple {
     border-color: var(--purple-button-color);
     background-color: var(--background-black);
@@ -106,6 +115,10 @@ a:hover {
 
 .button-purple:hover {
     background-color: var(--purple-button-color);
+}
+
+.button-purple:active {
+    background-image: linear-gradient( 90deg, var(--purple-button-color), #141616);
 }
 
 .social-logo {
@@ -117,11 +130,6 @@ a:hover {
 
 .social-logo:hover {
     fill: var(--purple-button-dark-color);
-}
-
-.container {
-    max-width: 100%;
-    margin: auto;
 }
 
 .nav {
@@ -150,6 +158,106 @@ ol, ul {
 
 .nav-item {
     padding: 1rem 0;
+}
+
+footer {
+    background-color: var(--dark-gray);
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-item {
+    margin: 0 1rem
+}
+
+footer img {
+    margin: auto;
+}
+
+.footer-bottom {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom * {
+    padding: .2rem 1rem;
+    color: var(--yellow-button-color);
+    font-weight: bold;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-top div * {
+    padding: 1rem 1rem;
+}
+
+.footer-top * {
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+
+input {
+    border-color: #141616;
+    background-color: rgb(255, 208, 92);
+    color: black;
+    border-radius: 1.5625rem;
+    border: 1px;
+    min-height: 3rem;
+    padding: 1rem 3rem;
+    outline: none;
+    margin: 1rem 1rem;
+    box-shadow: 1px 6px 5px -5px black;
+    transition: background-color .2s ease-in-out;
+}
+
+input:focus {
+    border: 6px;
+    background-color: var(--yellow-button-hover-color);
+    border-color: var(--article-background);
+    box-shadow: 0 0 0 1pt var(--article-background);
+}
+
+button {
+    border-color: #141616;
+    background: var(--dark-gray);
+    color: var(--font-color);
+    border-radius: 1.5625rem;
+    border: 1px;
+    min-height: 3rem;
+    outline: none;
+    margin: 1rem 1rem;
+    box-shadow: 0 10px 6px -6px black;
+}
+
+button:hover {
+    background: linear-gradient(90deg, black, var(--dark-gray))
+}
+
+button:focus {
+    background: black
+}
+
+@media (min-width: 768px) {
+    .footer-top div {
+        flex-direction: row;
+    }
+    .footer-bottom {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 992px) {
