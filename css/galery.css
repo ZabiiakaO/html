@@ -62,7 +62,7 @@ h2 {
 .gallery-grid {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     margin: auto;
     min-height: 40rem;
 }
