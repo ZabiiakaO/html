@@ -136,8 +136,7 @@ h3 {
 #gift-form {
     background-color: var(--yellow-button-color);
     padding-bottom: 0;
-    padding: 8rem 1rem;
-    text-align: left;
+    padding: 3rem 1rem 8rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,7 +144,7 @@ h3 {
 
 #gift-form h2, #gift-form p {
     color: black;
-    text-align: left;
+    text-align: center;
 }
 
 #gift-form p {
@@ -158,6 +157,7 @@ h3 {
     flex-direction: column;
     height: 10rem;
     justify-content: space-around;
+    padding-top: 3rem;
 }
 
 h1 {
@@ -177,6 +177,7 @@ h1 {
 
 #about-text {
     padding: 2rem;
+    text-align: justify
 }
 
 .carousel-content .d-flex {
@@ -261,10 +262,6 @@ section h2 {
     flex-direction: column;
 }
 
-.main-form form * {
-    margin: .5rem 0;
-}
-
 .book-flex div {
     margin: 1rem 0;
 }
@@ -293,6 +290,9 @@ section h2 {
     .carousel-content {
         flex-direction: row-reverse;
     }
+    #gift-form h2, #gift-form p {
+        text-align: left;
+    }
     .carousel-image {
         min-height: unset;
         min-width: 50%;
@@ -320,6 +320,8 @@ section h2 {
     }
     #gift-form {
         flex-direction: row;
+        text-align: left;
+        padding: 8rem 1rem;
     }
     #gift-form form {
         width: 50%;
@@ -377,6 +379,7 @@ section h2 {
     .soon-box {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: unset;
+        grid-gap: 0;
     }
     .small-soon {
         grid-template-rows: 1fr 1fr;
@@ -384,9 +387,6 @@ section h2 {
     }
     #murder-quest {
         min-height: 690px;
-    }
-    .soon-box {
-        grid-gap: 0;
     }
 }
 

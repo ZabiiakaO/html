@@ -1,5 +1,6 @@
 :root {
     --background-black: black;
+    --background-dark: rgb(35, 37, 37);
     --dark-gray: rgba(20, 22, 22, 255);
     --font-color: white;
     --font-hover-color: rgb(255, 197, 53);
@@ -37,6 +38,7 @@ h1, h2 {
 
 h1, h2, h3 {
     text-align: center;
+    color: var(--font-color);
 }
 
 .top-head {
@@ -87,8 +89,9 @@ a:hover {
     padding: 0.625rem 1rem;
     min-width: 10rem;
     text-align: center;
-    height: 3rem;
     min-width: 13rem;
+    margin: 1rem 1rem;
+    min-height: 3rem;
 }
 
 .button-yellow {
@@ -104,7 +107,7 @@ a:hover {
 }
 
 .button-yellow:active {
-    background-image: linear-gradient( 90deg, #ffc535, #141616);
+    background-image: linear-gradient( 90deg, var(--yellow-button-color), var(--background-dark));
 }
 
 .button-purple {
@@ -118,7 +121,7 @@ a:hover {
 }
 
 .button-purple:active {
-    background-image: linear-gradient( 90deg, var(--purple-button-color), #141616);
+    background-image: linear-gradient( 90deg, var(--purple-button-color), var(--background-dark));
 }
 
 .social-logo {
@@ -192,6 +195,7 @@ footer img {
 .footer-top {
     display: flex;
     flex-direction: column;
+    color: var(--font-color);
 }
 
 .footer-top div {
@@ -210,10 +214,7 @@ footer img {
     font-weight: bolder;
 }
 
-input {
-    border-color: #141616;
-    background-color: rgb(255, 208, 92);
-    color: black;
+input, select {
     border-radius: 1.5625rem;
     border: 1px;
     min-height: 3rem;
@@ -226,29 +227,71 @@ input {
 
 input:focus {
     border: 6px;
-    background-color: var(--yellow-button-hover-color);
-    border-color: var(--article-background);
     box-shadow: 0 0 0 1pt var(--article-background);
 }
 
-button {
-    border-color: #141616;
-    background: var(--dark-gray);
-    color: var(--font-color);
-    border-radius: 1.5625rem;
-    border: 1px;
-    min-height: 3rem;
-    outline: none;
-    margin: 1rem 1rem;
-    box-shadow: 0 10px 6px -6px black;
+.input-yellow {
+    border-color: var(--background-dark);
+    background-color: rgb(255, 208, 92);
+    color: black;
 }
 
-button:hover {
+.input-yellow:focus {
+    background-color: var(--yellow-button-hover-color);
+    border-color: var(--article-background);
+}
+
+.submit-dark {
+    border-color: var(--background-dark);
+    background: var(--dark-gray);
+    color: var(--font-color);
+}
+
+.submit-dark:hover {
     background: linear-gradient(90deg, black, var(--dark-gray))
 }
 
-button:focus {
-    background: black
+.submit-dark:focus {
+    background: linear-gradient( 270deg, gray, black);
+}
+
+.input-dark {
+    border-color: var(--background-dark);
+    background-color: var(--background-dark);
+    color: var(--font-color);
+    box-shadow: 0 0 1pt 0 var(--font-color);
+}
+
+.input-dark:focus {
+    background-color: var(--dark-gray);
+    border-color: var(--article-background);
+    box-shadow: 0 0 0 1pt var(--font-color);
+}
+
+.submit-yellow {
+    border-color: var(--yellow-button-hover-color);
+    background: var(--yellow-button-color);
+    color: var(--font-color);
+    transition: color .2s ease-out;
+    box-shadow: 0 10px 23.8px 1.2px rgb(255 197 53 / 30%);
+}
+
+.submit-yellow:hover {
+    background: linear-gradient( 270deg, var(--yellow-button-color), var(--yellow-button-hover-color));
+}
+
+.submit-yellow:focus {
+    background: linear-gradient( 90deg, var(--yellow-button-color), var(--background-dark));
+}
+
+.dark-select {
+    background-color: var(--background-dark);
+    color: #4d6167;
+    box-shadow: 0 0 1pt 0 var(--font-color);
+}
+
+.dark-select:hover {
+    box-shadow: 0 0 0 1pt var(--font-color);
 }
 
 @media (min-width: 768px) {

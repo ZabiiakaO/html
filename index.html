@@ -365,9 +365,9 @@
                         choose any quest in any of our locations at a suitable time.</p>
                 </div>
                 <form action="/" method="post">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone number">
-                    <button class="submit">Start a Quest!</button>
+                    <input class="input-yellow" type="text" required placeholder="Name*">
+                    <input class="input-yellow" type="text" required placeholder="Phone number*">
+                    <button class="button submit-dark">Start a Quest!</button>
                 </form>
             </div>
         </section>
@@ -441,18 +441,18 @@
         </section> -->
         <section class="main-form-wrap container">
             <div class="book-flex">
-                <div class="map">
-                    <img src="img/map.jpg" alt="map">
-                </div>
+                <div style="width: 100%"><iframe width="100%" height="680" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=299%20E%2087th%20St%20Brooklyn,%20NY%2011236+(Maze%20Quest)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href="https://www.maps.ie/draw-radius-circle-map/"></a></div>
                 <div id="book" class="main-form">
                     <h2>Ready to Escape?</h2>
                     <p>Complete the form below, specify the room, the date and the quantity of players, and we will contact you to confirm your booking.</p>
                     <form action="https://formspree.io/f/mlealyno" method="post">
-                        <input type="text" placeholder="Enter your full name*">
-                        <input type="text" placeholder="Enter your phone number*">
-                        <input type="email" placeholder="Enter your phone e-mail*">
-                        <input id="details" placeholder="Specify the details"></input>
-                        <button class="submit">Start a Quest!</button>
+                        <input class="input-yellow" type="text" required placeholder="Enter your full name*">
+                        <input class="input-yellow" type="text" required placeholder="Enter your phone number*">
+                        <input class="input-yellow" type="email" required placeholder="Enter your phone e-mail*">
+                        <input class="input-yellow" id="details" placeholder="Specify the details"></input>
+                        <button class="button submit-dark">Start a Quest!</button>
                     </form>
                 </div>
             </div>
