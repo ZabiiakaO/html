@@ -1,0 +1,47 @@
+h3 span {
+    color: var(--yellow-button-color);
+}
+
+.room-name {
+    color: var(--yellow-button-color);
+    text-align: left;
+}
+
+#map {
+    width: 100%;
+}
+
+.container div {
+    padding: 0 1rem 2rem 1rem;
+}
+
+p {
+    color: var(--font-color);
+    text-align: left;
+}
+
+.caption-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    min-height: 13rem;
+}
+
+.container h2, .underheader {
+    padding-bottom: 1rem;
+}
+
+#contact-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    #contact-flex {
+        flex-direction: row;
+    }
+    #map {
+        width: 75%;
+    }
+}

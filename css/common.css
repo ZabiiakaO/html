@@ -47,7 +47,6 @@ h1, h2, h3 {
     display: none;
     justify-content: space-between;
     padding: 0 20%;
-    transition: all 1s ease-out;
 }
 
 nav {
@@ -92,12 +91,12 @@ a:hover {
     min-width: 13rem;
     margin: 1rem 1rem;
     min-height: 3rem;
+    transition: background-color .2s ease-in-out;
 }
 
 .button-yellow {
     border-color: var(--yellow-button-color);
     background-color: var(--yellow-button-color);
-    transition: color .2s ease-out;
     box-shadow: 0 10px 23.8px 1.2px rgb(255 197 53 / 30%);
 }
 
@@ -113,7 +112,6 @@ a:hover {
 .button-purple {
     border-color: var(--purple-button-color);
     background-color: var(--background-black);
-    transition: color .2s ease-out;
 }
 
 .button-purple:hover {
@@ -222,6 +220,7 @@ input, select {
     outline: none;
     margin: 1rem 1rem;
     box-shadow: 1px 6px 5px -5px black;
+    -webkit-box-shadow: 1px 6px 5px -5px black;
     transition: background-color .2s ease-in-out;
 }
 
@@ -294,6 +293,10 @@ input:focus {
     box-shadow: 0 0 0 1pt var(--font-color);
 }
 
+input:-webkit-autofill, input:-webkit-autofill:focus {
+    background-color: var(--yellow-button-color)!important;
+}
+
 @media (min-width: 768px) {
     .footer-top div {
         flex-direction: row;
@@ -306,10 +309,6 @@ input:focus {
 @media (min-width: 992px) {
     .mobile-item {
         display: none;
-    }
-    .top-head {
-        display: flex;
-        transition: all 1s ease-out;
     }
     nav {
         padding: 0 20%;

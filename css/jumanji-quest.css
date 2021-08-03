@@ -1,0 +1,83 @@
+.room-header {
+    background: no-repeat 41.25% 27.27% / cover url(../img/jungle-smoke.png);
+    height: 50vh;
+}
+
+.shadow {
+    background: linear-gradient( 0deg, rgba(1, 1, 1, 0.96) 10%, rgba(0, 0, 0, 0.7) 100%);
+    height: inherit;
+}
+
+.room-header h1 {
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.hero-item {
+    margin-top: 8rem;
+}
+
+.book-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.map img {
+    width: 100%;
+}
+
+.main-form {
+    background-color: var(--dark-gray);
+    padding: 1rem 1rem;
+}
+
+.main-form h2, .main-form p {
+    color: var(--font-color);
+}
+
+.main-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-flex div {
+    margin: 1rem 0;
+}
+
+h3 {
+    color: var(--yellow-button-color);
+}
+
+p {
+    color: var(--font-color);
+}
+
+.description-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-item {
+    margin: auto;
+}
+
+.description-item, .description-item h2, .description-item h3 {
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .book-flex {
+        flex-direction: row;
+    }
+    .main-form {
+        width: 50%;
+        text-align: center;
+        padding: 3rem;
+    }
+    .map {
+        width: 50%;
+    }
+    .book-flex div {
+        margin: 1rem 1rem;
+    }
+}
