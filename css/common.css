@@ -298,11 +298,12 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     background-color: var(--yellow-button-color)!important;
 }
 
-header {
+/* header {
     position: sticky;
     top: 0;
     background: black;
-}
+    z-index: 1;
+} */
 
 @media (min-width: 768px) {
     .footer-top div {
