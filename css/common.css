@@ -50,6 +50,7 @@ h1, h2, h3 {
 }
 
 nav {
+    position: sticky;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -297,6 +298,12 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     background-color: var(--yellow-button-color)!important;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background: black;
+}
+
 @media (min-width: 768px) {
     .footer-top div {
         flex-direction: row;
@@ -315,5 +322,8 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     }
     .menu {
         min-width: 24rem;
+    }
+    .top-head {
+        display: flex;
     }
 }
